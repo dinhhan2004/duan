@@ -1,0 +1,37 @@
+form {
+    max-width: 400px; /* Độ rộng tối đa của form */
+    margin: 0 auto; /* Canh giữa form trên trang web */
+    padding: 25px; /* Khoảng cách giữa form và viền của nó */
+    border: 5px solid dimgray; /* Viền của form */
+    border-radius: 5px; /* Góc bo tròn của form */
+  }
+  
+  form label {
+    display: block; /* Hiển thị label trên một dòng mới */
+    font-weight: bold; /* In đậm label */
+    margin-bottom: 1px; /* Khoảng cách giữa label và input */
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    display: block; /* Hiển thị input trên một dòng mới */
+    width: 100%; /* Chiều rộng của input */
+    padding: 8px; /* Khoảng cách giữa input và viền của nó */
+    margin-bottom: 5px; /* Khoảng cách giữa các input */
+    border: 1px solid #ccc; /* Viền của input */
+    border-radius: 10px; /* Góc bo tròn của input */
+  }
+  
+  form input[type="submit"] {
+    background-color: grey; /* Màu nền của nút Submit */
+    color: white; /* Màu chữ của nút Submit */
+    padding: 10px 20px; /* Khoảng cách giữa nút Submit và viền của nó */
+    border: none; /* Loại bỏ viền của nút Submit */
+    border-radius: 10px; /* Góc bo tròn của nút Submit */
+    cursor: pointer; /* Hiển thị con trỏ khi rê chuột qua nút Submit */
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: lightslategrey; /* Màu nền của nút Submit khi rê chuột qua */
+  }
+  

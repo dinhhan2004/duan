@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Giỏ hàng</title>
+</head>
+<style>
+  img{
+    width: 150px;
+  }
+  td{
+    width: 200px;
+    height: 100px;
+  }
+ .checkout{
+
+  justify-content: center;
+  align-items: center;
+  display:flex;
+ }
+ .checkout h1{
+
+margin-right: 20px;
+}
+
+.checkout button{
+  border-radius: 20px;
+  height: 50px;
+  cursor:pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  background-color: lightpink;
+}
+
+.checkout button:hover{
+  box-shadow: inset 80px 80px 80px lightcoral;
+  color: whitesmoke;
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: all 0,5s ease;
+}
+ 
+</style>
+<body>
+    <header>
+      <div class="menu">
+        <div class="navbar">
+          <nav>
+             <ul>
+              <li><a href="index.html">Trang chủ </a></li>
+            <li><a href="shop.html">Sản phẩm </a></li>
+            <!-- <li><a href="#"><img src="image/iconproduct.png" alt="logo">PRODUCT </a></li> -->
+            
+             <li><a href="cart.html" data-count="0">Giỏ hàng </a></li>  <!-- target="page" -->
+            <li><a href="signupForm.html">Đăng kí </a></li>
+             </ul>
+          </nav>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Tìm kiếm sản phẩm...">
+          <button type="submit">Tìm kiếm</button>
+          </div>
+      </div>
+
+      
+ 
+   
+
+  </header>
+  <hr>
+
+  <div class="cart">
+    <h1>GIỎ HÀNG CỦA BẠN </h1>
+    
+  
+  </div>
+  <table border="2" align="center" width="1000"  id="cart-items">
+    <tr>
+      <td>Tên sản phẩm </td>
+      <td>Giá</td>
+      <td>Số lượng</td>
+    
+       
+      <td>Hình ảnh</td>
+      <td>Xóa</td>
+    </tr>
+    <tbody id="cart-items">
+    </tbody>
+  </table>
+
+  
+  <h1 align="right">Tổng thành tiền: <span id="tong">0</span></h1>
+
+  <div class="checkout">
+    <h1>Thanh toán </h1>
+    <a href="index.html" target="page"><button>CHECK OUT CART!</button></a>
+  </div>
+
+  <script src="cart.js">
+
+  </script>
+     
+</body>
+</html>

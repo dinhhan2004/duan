@@ -1,0 +1,80 @@
+{
+    "categories" : [
+        {
+            "id": 1,
+            "name": "Dép"
+        },
+        {
+            "id": 2,
+            "name": "Giày"
+        },
+        {
+            "id": 3,
+            "name": "Tất"
+        },
+        {
+            "id": 4,
+            "name": "Áo"
+        }
+    ],
+
+    "product": [
+    
+    {
+        "id": 1,
+        "name": "Dép Đế Vỏ Trấu Quai Da",
+        "image": "img/sp1.jpg",
+        "price": 145
+    },
+    {
+        "id": 2,
+        "name": "Dép bánh mì",
+        "image": "img/sp2.jpg",
+        "price": 320
+    },
+    {
+        "id": 3,
+        "name": "Dép đi bời",
+        "image": "img/sp3.jpg",
+        "price": 68
+    },
+    {
+        "id": 4,
+        "name": "Dép cá mập con dududu",
+        "image": "img/sp4.jpg",
+        "price": 99
+    },
+    {
+        "id": 5,
+        "name": "sp5",
+        "image": "img/sp5.jpg",
+        "price": 200
+    },
+    {
+        "id": 6,
+        "name": "Dép le hoa họe",
+        "image": "img/sp6.jpg",
+        "price": 78
+    },
+    {
+        "id": 7,
+        "name": "Dép độn",
+        "image": "img/sp7.jpg",
+        "price": 147
+    },
+    {
+        "id": 8,
+        "name": "Dép chàn",
+        "image": "img/sp8.jpg",
+        "price": 125
+    },
+    {
+        "id": 9,
+        "name": "sp9",
+        "image": "img/sp6.jpg",
+        "price": 111
+    }
+    
+   
+    ]
+} 

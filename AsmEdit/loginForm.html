@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signupForm.css">
+    <link rel="stylesheet" href="sanpham.css">
+    <title>ĐĂNG NHẬP</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Quay lại trang chủ</a></li>
+        
+        <li><a href="cart.html" target="page">Đi đến Giỏ hàng</a></li>
+      </ul>
+    </nav>
+  </header>
+   
+   
+  </head>
+  <style>
+    body{
+        text-align: center;
+        justify-content: center;
+  align-items: center;
+    }
+   .cellular{
+    display: inline-block;
+    justify-content: center;
+  align-items: center
+   }
+img {
+  width: 150px;
+  height: 150px;
+
+}
+h2{
+    
+    font-size:30px ;
+    margin-top: 10px;
+}
+.alert{
+  color: red;
+}
+ 
+  
+  </style>
+  <body>
+    
+
+    <form name="loginForm"  onsubmit="return validateForm()" method="post">
+		<label for="tenDN">Tên đăng nhập:</label>
+		<input type="text" name="tenDN" id="tenDN"><br><br>
+
+		<label for="matkhau">Mật khẩu:</label>
+		<input type="password" name="matkhau" id="matkhau"><br><br>
+
+		<input type="submit" value="Đăng nhập">
+	</form>
+    <script>
+		function validateForm() {
+  var username = document.forms["loginForm"]["tenDN"].value;
+  var password = document.forms["loginForm"]["matkhau"].value;
+  var MKDung = "ps32670"; // pass đúng 
+  var tenDNDung = "FPT Polytechnic"; // tên đăng nhập đúng
+
+  if ( username == "") {
+    alert("Vui lòng nhập tên đăng nhập");
+    return false;
+  }
+
+  if (password == "") {
+    alert("Vui lòng nhập mật khẩu");
+    return false;
+  }
+
+  if (username !== tenDNDung) {
+    alert("Tên đăng nhập không đúng");
+    return false;
+  }
+
+  if (password !== MKDung) {
+    alert("Mật khẩu không đúng");
+    return false;
+  }
+
+  return true; // trả về true nếu tất cả điều kiện đều đúng
+}
+
+        
+      </script>
+</body>
+</html>

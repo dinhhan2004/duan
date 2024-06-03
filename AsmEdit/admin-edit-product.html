@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit-product</title>
+
+<!-- Styles -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .sidebar {
+        background-color: #555;
+        color: #fff;
+        padding: 15px;
+    }
+
+    .main {
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    .page-header {
+        font-size: 24px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .checkbox {
+        margin-top: 10px;
+    }
+
+    button {
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+    }
+
+    button[type="reset"] {
+        background-color: #ccc;
+        margin-left: 10px;
+    }
+</style>
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <span>Admin</span>
+        <span>Đăng xuất</span>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="category.html">Quản lý danh mục</a></li>
+                    <li><a href="admin-product.html">Quản lý sản phẩm</a></li>
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="row">
+                    <h1 class="page-header">Sản phẩm:</h1>
+                </div>
+
+                <div class="row">
+                    <form role="form" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label>Tên sản phẩm</label>
+                            <input type="text" name="prd_name" required class="form-control" value=""  placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Giá sản phẩm</label>
+                            <input type="number" name="prd_price" required value="" class="form-control">
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <label>Khuyến mãi</label>
+                            <input type="number" name="prd_promotion" required value="" class="form-control">
+                        </div> -->
+
+                        <div class="form-group">
+                            <label>Ảnh sản phẩm</label>
+                            <input type="file" name="prd_image" required>
+                            <br>
+                            <!-- <div>
+                                <img src="img/meobay.jpg">
+                            </div> -->
+                        </div>
+
+                        <div class="form-group">
+                            <label>Danh mục</label>
+                            <!-- <select name="cat_id" class="form-control">
+                                <option selected value=1>Sách Tiếng Việt</option>
+                                <option value=2>Sách nước ngoài</option>
+                                <option value=3>Manga - Comic</option>
+                            </select> -->
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <label>Sản phẩm nổi bật</label>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="prd_featured" type="checkbox" value=1>Nổi bật
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mô tả sản phẩm</label>
+                            <textarea name="prd_details" required class="form-control" rows="3"></textarea>
+                        </div> -->
+
+                        <button type="submit" name="sbm">Cập nhật</button>
+                        <button type="reset">Làm mới</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Sản phẩm - Admin</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .sidebar {
+            background-color: #555;
+            color: #fff;
+            padding: 15px;
+        }
+        .main {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .btn-success {
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+        }
+        .btn-danger {
+            color: #fff;
+            background-color: #d9534f;
+            border-color: #d43f3a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trang Admin </h1>
+    </header>
+
+    <nav>
+        <a href="#">Admin</a>
+        <a href="#">Đăng xuất</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 sidebar">
+                <ul>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="category.html">Danh mục</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-9 main">
+                <h2 class="sub-header">Danh sách sản phẩm</h2>
+                <div id="toolbar">
+                    <button class="btn btn-success" onclick="location.href='admin-add-product.html'">
+                        Thêm sản phẩm
+                    </button>
+                </div>
+
+                <table id="productTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Ảnh sản phẩm</th>
+                            <th>Số lượng đã bán</th>
+                            <th>Danh mục</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dữ liệu sản phẩm sẽ được hiển thị tại đây -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin-product.js">
+        
+    </script>
+</body>
+</html>
+ 

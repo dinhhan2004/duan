@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signupForm.css">
+    <link rel="stylesheet" href="sanpham.css">
+    <title>CheckOut</title>
+</head>
+<body>
+ 
+   
+   
+  </head>
+  <style>
+    body{
+        text-align: center;
+        justify-content: center;
+  align-items: center;
+    }
+   .cellular{
+    display: inline-block;
+    justify-content: center;
+  align-items: center
+   }
+h2{
+    
+    font-size:30px ;
+    margin-top: 10px;
+}
+ 
+  
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Quay lại trang chủ</a></li>
+        
+        <li><a href="cart.html" target="page">Đi đến Giỏ hàng</a></li>
+      </ul>
+    </nav>
+    <h2>Check Out</h2>
+    
+
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <label for="firstName">Họ:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+        <span id="firstNameError"></span><br>
+      
+        <label for="lastName">Tên:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="LastName">
+        <span id="lastNameError"></span><br><br>
+      
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Email">
+        <span id="emailError"></span><br><br>
+
+        <label for="">Mật khẩu</label>
+        <input type="password" placeholder="PassWord">
+
+        <input type="submit" value="Check Out">
+      </form>
+      
+
+      <script>
+       function validateForm() {
+  // Lấy giá trị các trường input
+  var firstName = document.forms["myForm"]["firstName"].value;
+  var lastName = document.forms["myForm"]["lastName"].value;
+  var email = document.forms["myForm"]["email"].value;
+
+
+  // Kiểm tra trường First Name có rỗng không
+  if (firstName == "") {
+    showError("firstName", "Vui lòng nhập FIRST NAME");
+    
+    return false;
+  } else {
+    hideError("firstName");
+  }
+
+  // Kiểm tra trường Last Name có rỗng không
+  if (lastName == "") {
+    showError("lastName", "Vui lòng nhập LAST NAME");
+    
+    return false;
+  } else {
+    hideError("lastName");
+  }
+
+  // Kiểm tra trường Email có rỗng không và đúng định dạng email không
+  if (email == "") {
+    showError("email", "Email rỗng");
+    return false;
+  } else if (!/\S+@\S+\.\S+/.test(email)) {
+    showError("email", "Email này không hợp lệ");
+    
+    return false;
+  } else {
+    hideError("email");
+  }
+
+  return true;
+ }
+
+// Hàm hiển thị thông báo lỗi
+function showError(inputId, errorMessage) {
+  var inputElement = document.getElementById(inputId);
+  var errorElement = inputElement.nextElementSibling;
+  errorElement.innerHTML = errorMessage;
+}
+
+// Hàm ẩn thông báo lỗi
+function hideError(inputId) {
+  var inputElement = document.getElementById(inputId);
+  var errorElement = inputElement.nextElementSibling;
+  errorElement.innerHTML = "";
+}
+      </script>
+</body>
+</html>

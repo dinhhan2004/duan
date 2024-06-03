@@ -1,0 +1,59 @@
+{
+    "catalories" : [
+        
+    ],
+
+    "product": [
+    
+    {
+        "id": 1,
+        "name": "Sản phẩm 101",
+        "image": "img/sp1.jpg",
+        "price": 147
+    },
+    {
+        "id": 2,
+        "name": "Dép bánh mì",
+        "image": "img/sp2.jpg",
+        "price": 32
+    },
+    {
+        "id": 3,
+        "name": "Dép mới",
+        "image": "img/sp3.jpg",
+        "price": 147
+    },
+    {
+        "id": 4,
+        "name": "Sản phẩm 4",
+        "image": "img/sp4.jpg",
+        "price": 147
+    },
+    {
+        "id": 5,
+        "name": "Sản phẩm 555555",
+        "image": "img/sp1.jpg",
+        "price": 147
+    },
+    {
+        "id": 6,
+        "name": "Dép bánh mỳ",
+        "image": "img/sp2.jpg",
+        "price": 64
+    },
+    {
+        "id": 7,
+        "name": "Sản phẩm 777777",
+        "image": "img/sp3.jpg",
+        "price": 147
+    },
+    {
+        "id": 8,
+        "name": "Sản phẩm 4",
+        "image": "img/sp1.jpg",
+        "price": 147
+    }
+    
+   
+    ]
+} 

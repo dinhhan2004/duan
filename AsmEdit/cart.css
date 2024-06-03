@@ -1,0 +1,84 @@
+body {
+  padding: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+ 
+}
+
+
+header img{
+  position: relative;
+height: 100px;
+  width: 100px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* thay đổi chiều cao tùy ý */
+ 
+  padding: 10px;
+}
+.header-text {
+ 
+  font-size: 50px;
+  font-weight: bold;
+  white-space: nowrap;
+  flex: 1;
+  text-align: center;
+  color:lightslategray;
+ margin-left: 20px;
+ 
+  white-space: nowrap;
+  
+}
+.header-buttons {
+  
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  text-align: right;
+}
+.header-buttons button {
+  font-family: 'Times New Roman', Times, serif;
+  white-space: nowrap;
+  margin-left: 20px;
+  background-color: black;
+  
+  border-radius: 20px;
+  border:#fff;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header-buttons button:hover{
+     border-radius: 10px;
+     border: 3px solid dimgray;
+     transform: scale(1.2);
+  box-shadow:inset 50px 50px 50px rgb(240, 77, 145);
+}
+.header-buttons a{
+  text-decoration: none;
+  color: white;
+}
+.header-contact {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-weight: bold;
+  justify-content: center;
+  flex: 5;
+}
+
+.header-contact span {
+  margin-right: 10px;
+  font-size: large;
+  color: #0046ab;
+}
+
+.cart h1{
+  text-align: center;
+}
+td{
+  text-align: center;
+}

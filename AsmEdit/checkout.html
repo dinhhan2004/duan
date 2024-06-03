@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signupForm.css">
+    <title>CHECK OUT </title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Quay lại trang chủ</a></li>
+          
+          <li><a href="cart.html" target="page">Đi đến Giỏ hàng</a></li>
+        </ul>
+      </nav>
+      <div class="cart-title">
+        <h2>Checkout</h2>
+    </div>
+
+    <form id="checkout_form" action="#" method="post">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="first_name" value="" placeholder="First Name">
+            </div>
+            <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="last_name" value="" placeholder="Last Name">
+            </div>
+            <div class="col-12 mb-3">
+                <input type="text" class="form-control" id="email" placeholder="Email" value="">
+            </div>
+            <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="phone_number" min="0" placeholder="Phone No" value="">
+            </div>
+            <div class="col-12 mb-3">
+                <textarea name="comment" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="Leave a comment about your order"></textarea>
+            </div>
+
+          
+        </div>
+        <input type="submit" class="btn amado-btn w-100" value="CHECK OUT">
+    </form>
+
+
+ <script src="checkout.js"></script>
+
+    
+</body>
+</html>

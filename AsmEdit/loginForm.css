@@ -1,0 +1,77 @@
+body {
+    background: url(/image/samset.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: darksalmon; 
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .logo {
+    width: 45px;
+    height: 50px;
+    margin-right: 5px;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"]
+   {
+    display: block;
+    margin: 10px 0;
+    height: 50px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    height: 40px;
+    margin-top: 30px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 10px 0;
+  }
+  
